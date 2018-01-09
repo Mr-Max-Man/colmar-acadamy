@@ -1,4 +1,5 @@
-
+/*
+ Color palettte can be found here: src=(http://paletton.com/#uid=13t0u0kl1Wx1x+IcEXDsUWkWEVB) Many thanks to the awesome color source from Czechoslovakia, paletton.com */
 
 
 .section {
@@ -9,10 +10,6 @@
   display: flex;
 }
 
-.banner-img {
+.banner {
   width: 60%;
-}
-
-.side-container {
-  width: auto;
 }
