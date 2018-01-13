@@ -1,6 +1,46 @@
 /*
- Color palettte can be found here: src=(http://paletton.com/#uid=13t0u0kl1Wx1x+IcEXDsUWkWEVB) Many thanks to the awesome color source from Czechoslovakia, paletton.com */
+ Color palettte can be found here: src=(http://paletton.com/#uid=13t0u0kl1Wx1x+IcEXDsUWkWEVB) Many thanks to the awesome color source from Czechoslovakia, paletton.com [spoiler, it's blue] */
 
+/* General Styles */
+html {
+  font-size: 16px;
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  width: 100%;
+}
+
+body > div {
+  display: block;
+}
+h1 {
+  font-size: 3rem;
+  font-style: bold;
+  color: rgb(50, 50, 50);
+  line-height: 4rem;
+}
+
+h2 {
+  font-size: 2.3rem;
+  font-style: bold;
+  color: rgb(50, 50, 50);
+  line-height: 4rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+  font-style: bold;
+  color: rgb(50, 50, 50);
+  line-height: 3rem;
+}
+
+p {
+  line-height: 1.5rem;
+  color: rgb(125, 125, 125);
+}
 
 .section {
   width: 100%;
@@ -10,6 +50,235 @@
   display: flex;
 }
 
-.banner {
+.grey {
+  background-color: rgb(225, 225, 225);
+}
+/* Styling by section */
+
+/* header */
+header {
+  position: fixed;
+  align-items: center;
+  justify-content: space-between;
+  height: 4rem;
+  top: 0;
+  background-color: white;
+}
+  /* logo */
+.logo {
+  align-items: center;
+  padding-left: 1.5rem;
+  height: 32px;
+  width: auto;
+}
+
+.logo * {
+  display: inline-block;
+  color: gray;
+}
+
+.logo h2 {
+  font-size: 1.25rem;
+}
+
+.logo h2 span {
+  font-style: bold;
+  color: black;
+}
+
+.logo img {
+  height: 100%
+}
+  /* faux-nav */
+ul {
+  align-items: center;
+  justify-content: flex-end;
+  flex-direction: row;
+  margin-right: 24px;
+}
+
+ul li {
+  margin: 0px 1rem;
+}
+
+/* introductory banner */
+#intro-banner-img {
+  height: 100%;
   width: 60%;
+  padding: 3rem 2.25rem;
+}
+
+#intro-banner {
+  margin-top: 4rem;
+  height: auto;
+  background-color: rgb(225, 225, 225);
+}
+
+#intro-banner div {
+  flex-direction: column;
+  justify-content: center;
+}
+
+#intro-banner > div {
+  align-items: flex-start;
+  width: 24rem;
+}
+
+#intro-banner div * {
+  margin: 0.75rem 0px;
+}
+
+#button {
+  padding: 0.5rem;
+  width: 24rem;
+  background-color: grey;
+  align-items: center;
+  margin: 0px;
+}
+
+#button p {
+  color: white;
+}
+
+/* Information section */
+
+.banner-media {
+  width: 100%;
+  height: auto; /* auto for now */
+}
+
+.banner {
+  height: auto;
+}
+
+.banner .main {
+  width: 60%;
+  padding: 3rem 2.25rem;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: left;
+}
+
+#information .banner-media {
+  margin-bottom: 3rem;
+}
+
+.main p {
+  margin-top: 1.5rem;
+}
+
+.supporting {
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 40%;
+  height: auto;
+  padding-top: 2rem;
+  border-left: 1px solid rgb(225, 225, 225);
+}
+
+.supporting-item {
+  flex-direction: row;
+  justify-content: left;
+  padding: 1rem;
+  max-height: 11rem;
+}
+
+.supporting-item img {
+  width: 35%;
+  height: auto;
+}
+
+.supporting-item div {
+  width: 65%;
+  margin-left: 1rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+}
+.supporting-item div * {
+  margin: 0.5rem
+}
+
+.link {
+  color: blue;
+}
+/* Courses */
+#courses {
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(225, 225, 225);
+  padding-bottom: 2rem;
+}
+
+#courses h2 {
+  margin: 2.5rem 0px;
+}
+#courses p {
+  color: rgb(160, 160, 160);
+}
+
+#course-list {
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: center;
+  margin: 0px 6.75rem;
+}
+
+.course-item {
+  max-width: 20rem;
+  height: 21rem;
+  background-color: white;
+  margin: 0rem 1rem 2rem 1rem;
+}
+
+.course-item img {
+  height: auto;
+  width: 100%;
+}
+
+.course-item div {
+  margin: 1rem;
+  margin-bottom: 1.5rem;
+
+}
+
+/* Thesis */
+
+#thesis {
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+#thesis h2 {
+  margin: 2rem;
+}
+
+#thesis .supporting {
+  border: none;
+}
+
+/* footer section */
+
+footer {
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  border-top: 1px solid rgb(225, 225, 225);
+}
+footer p {
+  padding: 1rem 1.5rem;
+}
+
+/* Styling by device */
+
+/* Desktop styles */
+@media only screen and (min-width: 926px) {
+
+  .mobile-img {
+    display: none;
+  }
 }
